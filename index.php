@@ -6,7 +6,7 @@
     <body>
         <div id="result"></div>
         <form id="form" onsubmit="return ajaxcall();">
-            Podaj kraj:
+            Choose your country:
             <select name="country">
                 <?php 
                 $response = file_get_contents('https://restcountries.com/v2/region/europe?fields=alpha2Code,name');
@@ -18,7 +18,7 @@
                 ?>
             </select>
             <br></br>
-            Podaj imię:
+            Put your name:
             <input type='text' name="name">
             <br>
             <input type="submit" value="Zatwierdź">

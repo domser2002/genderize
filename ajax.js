@@ -1,8 +1,6 @@
 function ajaxcall()
 {
-
   let data = new FormData(document.getElementById("form"));
- 
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "api.php");
   xhr.onload = function () {
@@ -11,5 +9,4 @@ function ajaxcall()
   };
   xhr.send(data);
   return false;
-
 }
